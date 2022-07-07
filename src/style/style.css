@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  min-height: 100vh;
+}
+
+.banner {
+  width: 600px;
+  margin: auto;
+  font-size: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner .container {
+  width: 400%;
+  position: relative;
+}
+
+.banner>.container .item {
+  width: 600px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.banner>.container .item img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.banner .btns {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.banner .btns .btn-item {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.banner .btns .btn-item.active {
+  background-color: rgb(246, 255, 0);
+}
+
+.banner .btns .btn-item:hover {
+  background-color: rgb(246, 255, 0);
+}
+
+.banner:hover > .arrows {visibility: visible;}
+
+.banner .arrows {
+  font-size: 40px;
+  visibility: hidden;
+}
+
+.banner .arrows .left, .banner .arrows .right {
+  position: absolute;
+  height: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.banner .arrows .left {
+  left: 0;
+}
+
+.banner .arrows .right {
+  right: 0;
+}
